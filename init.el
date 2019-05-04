@@ -18,6 +18,9 @@
    (quote
     (("melpa-stable" . "https://stable.melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (evil-magit use-package sublimity solarized-theme smex python-mode puppet-mode paradox magit jedi hackernews flymake-jslint flycheck-yamllint flycheck-pycheckers evil el-get company color-theme-sanityinc-solarized)))
  '(paradox-github-token t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -68,6 +71,7 @@
     flymake-jslint
     magit
     evil
+    evil-magit
     ))
 
 
@@ -82,6 +86,7 @@
 
 ;; Setup Evil Mode 666
 (require 'evil)
+;;(require 'evil-magit)
 (evil-mode 1)
 
 ;; Setup sublimity mode.
