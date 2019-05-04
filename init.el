@@ -37,28 +37,28 @@
 (setq package-list '(
     use-package
     paradox
-    auto-complete  
+    auto-complete
     color-theme-sanityinc-solarized
-    company        
-    concurrent     
-    ctable         
-    dash           
-    deferred       
-    el-get         
-    epc            
-    epl            
-    hydra          
-    jedi           
-    jedi-core      
-    let-alist              
-    pkg-info       
-    popup          
-    puppet-mode    
+    company
+    concurrent
+    ctable
+    dash
+    deferred
+    el-get
+    epc
+    epl
+    hydra
+    jedi
+    jedi-core
+    let-alist
+    pkg-info
+    popup
+    puppet-mode
     python-environment
-    python-mode    
+    python-mode
     seq
     solarized-theme
-    spinner       
+    spinner
     sublimity
     hackernews
     smex
@@ -66,6 +66,8 @@
     flycheck-pycheckers
     flycheck-yamllint
     flymake-jslint
+    magit
+    evil
     ))
 
 
@@ -77,6 +79,10 @@
 ;; Enable Auto-complete
 (add-hook 'text-mode-hook #'auto-complete-mode 1)
 (add-hook 'prog-mode-hook #'auto-complete-mode 1)
+
+;; Setup Evil Mode 666
+(require 'evil)
+(evil-mode 1)
 
 ;; Setup sublimity mode.
 (require 'sublimity)
